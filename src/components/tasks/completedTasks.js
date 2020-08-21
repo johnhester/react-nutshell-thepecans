@@ -25,7 +25,7 @@ const CompletedTaskList = (props) => {
             .then(() => getTasks());
             console.log("editing", editedTask)
     };
-    
+     
     useEffect(() => {
             getTasks();    
     }, []);

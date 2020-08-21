@@ -18,7 +18,7 @@ const getSortSetMessages = () => {
 }
 
 const sortMessages = (array) => {
-    return array.sort((message1, message2) => message1.timeStamp-message2.timeStamp)
+    return array.sort((message1, message2) => message2.timeStamp-message1.timeStamp)
 }
 
 const deleteMessage = (id) => {
@@ -59,11 +59,10 @@ return (
     <div className="message--list">
         <h1>Messages</h1>
         
-        <>
+        <div className="message__container--cards">
             {messages.map(message => 
                     <MessageCard 
-                        key={message.id}
-                        className="message__card"
+                        key={message.id}                        
                         message={message}
                         friends={friends}
                         convertTime={convertTime}
@@ -71,7 +70,7 @@ return (
                         {...props}
                     />
             )}
-        </>
+        </div>
         <div className="message__container--form">
             <MessageForm 
                 getSortSetMessages={getSortSetMessages}

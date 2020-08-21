@@ -21,7 +21,7 @@ const Login = props => {
     //   JSON.stringify(credentials)
     // );
 
-    ApiManager.getAll("users").then((users) => {
+    ApiManager.getAll("users").then((users) => { 
       let badLogin
       users.map((user) => {
         if (badLogin === false) {

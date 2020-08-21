@@ -8,7 +8,7 @@ import "./Pecans.css"
 const Pecans = () => {
   
   const isAuthenticated = () => sessionStorage.getItem("credentials") !== null;
-
+ 
   const [hasUser, setHasUser] = useState(isAuthenticated());
 
   const setUser = user => {

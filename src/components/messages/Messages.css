@@ -5,9 +5,23 @@
     width: 90%;
     margin: 1rem auto;
     padding: 1rem 2rem;
+    display: flex;
+    flex-flow: column;
 }
 
 .message--card {
     margin: 1rem 3rem;
     border-top: 2px dashed var(--purple);
+}
+
+
+.message__container--cards {
+    display: flex;
+    flex-flow: column-reverse;
+    overflow: scroll;
+    flex: 3;
+}
+
+.message__container--form {
+    flex: 1;
 }

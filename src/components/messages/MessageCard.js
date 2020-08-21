@@ -11,9 +11,9 @@ const MessageCard = props => {
                     {props.message.user.username}
                 </strong>
             </div>
-            <p>
+            <h5>
                 {props.convertTime(props.message.timeStamp)}
-            </p>
+            </h5>
             <p>
                 {props.message.content}
             </p>
